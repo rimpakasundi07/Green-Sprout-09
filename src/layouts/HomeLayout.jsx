@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router";
 import Navbar from "../components/Navbar/Navbar";
+import Banner from "../components/Banner/Banner";
 
 const HomeLayout = () => {
   return (
@@ -9,6 +10,7 @@ const HomeLayout = () => {
         <nav className="w-11/12 mx-auto">
           <Navbar></Navbar>
         </nav>
+        <Banner></Banner>
       </header>
       <main>
         <Outlet></Outlet>

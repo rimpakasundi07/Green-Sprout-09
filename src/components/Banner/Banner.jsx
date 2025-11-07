@@ -10,6 +10,7 @@ const Banner = () => {
   return (
     <div className="">
       <div className="bg-green-700">
+        {/* part 1 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 w-11/12 items-center mx-auto lg:gap-10">
           <div className="flex-1">
             {" "}
@@ -82,6 +83,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+      {/* part 2 */}
       <div className="w-11/12 mx-auto">
         <div className="section-title-container">
           <h2 className="title-text text-2xl text-[#A9D880] lg:text-4xl text-center lg:py-10 py-5  font-bold">

@@ -8,7 +8,7 @@
     "availableStock": 15,
     "careLevel": "Medium",
     "description": "Known for its stunning, large, arrow-shaped leaves, the Alocasia (or Elephant Ear) adds a dramatic, tropical flair to any indoor space. It thrives in bright, indirect light and high humidity. While beautiful, it requires consistent watering and attention, making it a rewarding challenge for plant lovers.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Alocasia_macrorrhizos_-_K%C3%B6lner_Flora_%284206%29.jpg",
+    "image": "https://i.ibb.co/bjGjBmqV/Alocasia-Plant.webp",
     "providerName": "Tropical Vibes Nursery"
   },
   {
@@ -20,7 +20,7 @@
     "availableStock": 12,
     "careLevel": "Medium",
     "description": "Azaleas are celebrated for their vibrant and abundant spring blooms, coming in shades of pink, red, white, and purple. These flowering shrubs prefer acidic soil and a partially shaded location. They are perfect for adding a burst of color to garden borders or as a beautiful indoor potted plant during their blooming season.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Rhododendron_indicum_in_Katsuragiyama_001.jpg",
+    "image": "https://i.ibb.co/C3QZQgCb/Azalea-Plant.webp",
     "providerName": "Bloom & Petal Gardens"
   },
   {
@@ -32,7 +32,7 @@
     "availableStock": 25,
     "careLevel": "Easy",
     "description": "Also known as Tulsi or Holy Basil, this aromatic herb is revered in India for its medicinal properties and spiritual significance. It's a key ingredient in many traditional remedies and teas. It is relatively easy to grow, requires ample sunlight, and regular watering. Its fresh, fragrant leaves can be used daily.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Ocimum_tenuiflorum_-_Holy_Basil.jpg",
+    "image": "https://i.ibb.co/v4f22nbx/Indian-Basil.webp",
     "providerName": "Herbal Heritage"
   },
   {
@@ -44,7 +44,7 @@
     "availableStock": 18,
     "careLevel": "Easy",
     "description": "The Rubber Plant (Ficus elastica) is a popular houseplant known for its large, glossy, dark green leaves. It's an excellent air purifier and a robust, low-maintenance choice for beginners. It prefers bright, indirect light and allowing the soil to dry out between waterings. It can grow quite tall, making a strong statement.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Ficus_elastica_-_K%C3%B6lner_Flora_%284196%29.jpg",
+    "image": "https://i.ibb.co/C5D63n1T/Rubber-Plant.webp",
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -56,7 +56,7 @@
     "availableStock": 20,
     "careLevel": "Medium",
     "description": "The 'Spark Plant' is a vibrant cultivar, likely a Fittonia, known for its striking, veined leaves that create a 'spark' of color. Its intricate patterns in pink, red, or white stand out against its green foliage. It loves high humidity and low to medium indirect light, making it a perfect choice for terrariums or bathrooms.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Fittonia_verschaffeltii_subsp._verschaffeltii_IMG_0628.jpg",
+    "image": "https://i.ibb.co/8nP43q3p/Spark-Plant.webp",
     "providerName": "Exotic Botanicals"
   },
   {
@@ -68,7 +68,7 @@
     "availableStock": 11,
     "careLevel": "Medium",
     "description": "Known as the 'Splender Plant,' this Calathea variety showcases nature's artistry with its splendid, decorative leaves. The foliage often features intricate patterns and rich colors. As a 'prayer plant,' its leaves fold up at night. It requires high humidity and filtered, indirect light to maintain its splendid appearance.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Calathea_orbifolia_Pot_15cm_IMG_20200130_113041.jpg",
+    "image": "https://i.ibb.co/0VQX2wXP/Splender-Plant.webp",
     "providerName": "Green Leaf Exotics"
   },
   {
@@ -80,7 +80,7 @@
     "availableStock": 30,
     "careLevel": "Easy",
     "description": "Often called the Chinese Money Plant, the 'Sprout Plant' (Pilea) is famous for its round, coin-shaped leaves and its tendency to produce many 'pups' or 'sprouts.' It's a fast-growing and easy-to-propagate plant, symbolizing good fortune. It thrives in bright, indirect light and is a favorite among beginners.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Pilea_peperomioides_-_Chinese_money_plant.jpg",
+    "image": "https://i.ibb.co/LDy5ZZ0W/Sprout-Plant.webp",
     "providerName": "Friendly Flora"
   },
   {
@@ -92,7 +92,7 @@
     "availableStock": 8,
     "careLevel": "Medium",
     "description": "The Weeping Fig (Ficus benjamina) is a graceful, elegant indoor tree with a slender trunk and a dense canopy of glossy, pointed leaves. It's effective at filtering indoor air pollutants. This plant can be sensitive to changes in its environment, preferring stable, bright, indirect light and consistent watering.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Ficus_benjamina_0010.jpg",
+    "image": "https://i.ibb.co/cSkHcYHn/Weeping-Fig.webp",
     "providerName": "UrbanGreen Studio"
   }
 ]

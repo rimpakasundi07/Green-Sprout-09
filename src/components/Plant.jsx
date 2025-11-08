@@ -7,9 +7,9 @@ const Plant = ({ plant }) => {
   return (
     <div>
       <Link>
-        <div className="border rounded-xl space-y-4 p-8 m-5 text-center shadow-2xl">
+        <div className="border rounded-xl space-y-4  lg:py-5 m-5 text-center shadow-2xl">
           <div className="">
-            <img src={image} alt="" />
+            <img className="w-40 h-full mx-auto " src={image} alt="" />
           </div>
           <h2 className="text-xl font-bold ">
             Plant: <span className="text-green-800"> {plantName}</span>

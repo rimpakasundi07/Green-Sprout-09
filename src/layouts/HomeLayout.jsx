@@ -9,9 +9,6 @@ const HomeLayout = () => {
   return (
     <div>
       <header>
-        <nav className="w-11/12 mx-auto">
-          <Navbar></Navbar>
-        </nav>
         <Banner></Banner>
 
         <Plants></Plants>

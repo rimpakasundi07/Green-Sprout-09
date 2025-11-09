@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router";
+import googleImg from "../assets/icons8-google-48.png";
 
 const Login = () => {
   const [loading, setLoading] = useState(false);
@@ -11,9 +13,9 @@ const Login = () => {
         </h2>
 
         {/* --- Social Login Option (Google) --- */}
-        <button className="w-full flex justify-center items-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mb-6">
+        <button className="w-full flex justify-center items-center gap-3 py-2 px-4 border border-gray-300 rounded-lg shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mb-6">
           {/* Using a placeholder for the Google icon */}
-          <span className="mr-2 text-lg">G</span>
+          <img className="w-8" src={googleImg} alt="" />
           Continue with Google
         </button>
 
@@ -97,12 +99,13 @@ const Login = () => {
         <div className="mt-6 text-center text-sm">
           <p className="text-gray-600">
             Don't have an account?
-            <a
-              href="/signup" // Link for Signup page
+            <Link
+              to={`/auth/register`}
+              // Link for Signup page
               className="font-medium text-indigo-600 hover:text-indigo-500 ml-1"
             >
               Sign Up
-            </a>
+            </Link>
           </p>
         </div>
       </div>

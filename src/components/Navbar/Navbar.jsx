@@ -1,8 +1,10 @@
-import React from "react";
+import React, { use } from "react";
 import { Link, NavLink } from "react-router";
 import userImg from "../../assets/icons8-user-50.png";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const Navbar = () => {
+  const { user } = use(AuthContext);
   return (
     <div className="w-11/12 mx-auto">
       <div className="navbar py-5">
@@ -28,7 +30,9 @@ const Navbar = () => {
             <NavLink to="/profile">My Profile</NavLink>
           </ul>
         </div>
-        <div className="navbar-end gap-5 items-center ">
+
+        <div className="navbar-end gap-5 items-center">
+          <div className="">{user && user.email}</div>
           <img src={userImg} alt="" />
           <Link to={`/auth/login`}>
             <button className="btn border-2 font-bold border-green-700 text-green-800">

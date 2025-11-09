@@ -31,7 +31,14 @@ const Navbar = () => {
         <div className="navbar-end gap-5 items-center ">
           <img src={userImg} alt="" />
           <Link to={`/auth/login`}>
-            <button className="btn">Login</button>
+            <button className="btn border-2 font-bold border-green-700 text-green-800">
+              Login
+            </button>
+          </Link>
+          <Link to={`/auth/register`}>
+            <button className="btn text-white  font-bold bg-green-700">
+              Register
+            </button>
           </Link>
         </div>
       </div>

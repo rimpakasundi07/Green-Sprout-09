@@ -3,6 +3,8 @@ import PlantDetails from "../pages/PlantDetails/PlantDetails";
 import Root from "../pages/Root/Root";
 //import Home from "../pages/Home";
 import HomeLayout from "../layouts/HomeLayout";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,10 @@ const router = createBrowserRouter([
         path: "/profile",
         element: <h2 className="text-2xl">Profile</h2>,
       },
+
+      { path: "/auth/login", element: <Login></Login> },
+      { path: "/auth/register", element: <Register></Register> },
+
       {
         path: "/plants",
         element: <h2 className="text-2xl">Plant Layout</h2>,

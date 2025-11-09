@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Outlet } from "react-router";
-import Navbar from "../components/Navbar/Navbar";
+
 import Banner from "../components/Banner/Banner";
 
 import Plants from "../components/Plants";

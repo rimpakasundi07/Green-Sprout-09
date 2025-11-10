@@ -32,13 +32,22 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end gap-5 items-center">
-          <div className="">{user && user.email}</div>
+          <div className="font-semibold text-blue-600">
+            {user && user.email}
+          </div>
           <img src={userImg} alt="" />
-          <Link to={`/auth/login`}>
-            <button className="btn border-2 font-bold border-green-700 text-green-800">
-              Login
+          {user ? (
+            <button className="btn border-2 font-bold border-amber-700 text-amber-800">
+              Logout
             </button>
-          </Link>
+          ) : (
+            <Link to={`/auth/login`}>
+              <button className="btn border-2 font-bold border-green-700 text-green-800">
+                Login
+              </button>
+            </Link>
+          )}
+
           <Link to={`/auth/register`}>
             <button className="btn text-white  font-bold bg-green-700">
               Register

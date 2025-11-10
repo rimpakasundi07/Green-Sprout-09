@@ -4,7 +4,17 @@ import userImg from "../../assets/icons8-user-50.png";
 import { AuthContext } from "../../provider/AuthProvider";
 
 const Navbar = () => {
-  const { user } = use(AuthContext);
+  const { user, logOut } = use(AuthContext);
+  const handleLogOut = () => {
+    console.log("User trying to Logout");
+    logOut()
+      .then(() => {
+        "You Logged Out Successfully";
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="w-11/12 mx-auto">
       <div className="navbar py-5">
@@ -37,7 +47,10 @@ const Navbar = () => {
           </div>
           <img src={userImg} alt="" />
           {user ? (
-            <button className="btn border-2 font-bold border-amber-700 text-amber-800">
+            <button
+              onClick={handleLogOut}
+              className="btn border-2 font-bold border-amber-700 text-amber-800"
+            >
               Logout
             </button>
           ) : (

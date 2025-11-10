@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import googleImg from "../assets/icons8-google-48.png";
 import { AuthContext } from "../provider/AuthProvider";
+import { Link } from "react-router";
 
 const Register = () => {
   const { createUser, setUser } = use(AuthContext);
@@ -123,9 +124,12 @@ const Register = () => {
 
         <p className="mt-6 text-center text-sm text-gray-600">
           Already have an account?
-          <a className="font-medium text-sky-600 hover:text-sky-500 ml-1 cursor-pointer">
+          <Link
+            to={`/auth/login`}
+            className="font-medium text-sky-600 hover:text-sky-500 ml-1 cursor-pointer"
+          >
             Log In
-          </a>
+          </Link>
         </p>
       </div>
     </div>

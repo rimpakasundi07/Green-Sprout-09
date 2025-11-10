@@ -5,6 +5,7 @@ import Root from "../pages/Root/Root";
 import HomeLayout from "../layouts/HomeLayout";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Profile from "../pages/Profile";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <h2 className="text-2xl">Profile</h2>,
+        element: <Profile></Profile>,
       },
 
       { path: "/auth/login", element: <Login></Login> },

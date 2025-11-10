@@ -2,14 +2,23 @@ import React from "react";
 import googleImg from "../assets/icons8-google-48.png";
 
 const Register = () => {
+  const handleRegister = (e) => {
+    e.preventDefault();
+    console.log(e.target);
+    const form = e.target;
+    const name = form.name.value;
+    const photoUrl = form.photoUrl.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log({ name, photoUrl, email, password });
+  };
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-2xl">
-        <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-6">
+        <h2 className="text-2xl font-bold text-gray-900 text-center mb-6">
           👋 Sign Up for an Account
         </h2>
 
-        {/* Social Login Button (Google) */}
         <button className="w-full flex items-center justify-center space-x-2 border border-gray-300 rounded-lg py-2 px-4 text-gray-700 hover:bg-gray-50 transition duration-150 mb-4">
           <img className="w-8" src={googleImg} alt="" />
           <span className="font-medium">Sign up with Google</span>
@@ -22,7 +31,7 @@ const Register = () => {
           </span>
         </div>
 
-        <form className="space-y-4">
+        <form onSubmit={handleRegister} className="space-y-4">
           <div>
             <label
               htmlFor="name"

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { use } from "react";
 import googleImg from "../assets/icons8-google-48.png";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Register = () => {
+  const { createUser, setUser } = use(AuthContext);
   const handleRegister = (e) => {
     e.preventDefault();
     console.log(e.target);
@@ -11,6 +13,17 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log({ name, photoUrl, email, password });
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        //    console.log(user);
+        setUser(user);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.Message;
+        alert(errorMessage);
+      });
   };
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
@@ -48,6 +61,21 @@ const Register = () => {
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
             />
           </div>
+          <div>
+            <label
+              htmlFor="photoUrl"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Photo URL (Optional)
+            </label>
+            <input
+              type="url"
+              name="photoUrl"
+              id="photoUrl"
+              placeholder="https://example.com/photo.jpg"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+            />
+          </div>
 
           <div>
             <label
@@ -62,22 +90,6 @@ const Register = () => {
               id="email"
               required
               placeholder="you@example.com"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
-            />
-          </div>
-
-          <div>
-            <label
-              htmlFor="photoUrl"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Photo URL (Optional)
-            </label>
-            <input
-              type="url"
-              name="photoUrl"
-              id="photoUrl"
-              placeholder="https://example.com/photo.jpg"
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
             />
           </div>
